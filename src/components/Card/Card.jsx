@@ -6,7 +6,7 @@ function Card({title,image}) {
     <div className="card">
         <h1>{title}</h1>
         <div className="hovercard">
-            <img src={image} alt="" />
+            {image && <img src={image} alt={title} />}
         </div>
     </div>
   )
